@@ -1,0 +1,107 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f7fc;
+  color: #1d2939;
+}
+
+.header {
+  background: #1746a2;
+  color: white;
+  padding: 26px 20px;
+  text-align: center;
+}
+
+.brand {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 22px 16px;
+}
+
+input {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ccd5e3;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.subjects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.subject {
+  padding: 10px 16px;
+  background: #e0eaff;
+  color: #1746a2;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.notes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 2px 9px #15264a12;
+}
+
+.card p {
+  color: #667085;
+  line-height: 1.5;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.actions a {
+  display: inline-block;
+  padding: 10px 12px;
+  background: #1746a2;
+  color: white;
+  text-decoration: none;
+  border-radius: 7px;
+  font-size: 14px;
+}
+
+footer {
+  text-align: center;
+  padding: 24px;
+  color: #667085;
+}
+
+
+.note-thumbnail {
+  display: block;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.card {
+  overflow: hidden;
+}
+
