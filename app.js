@@ -171,3 +171,16 @@ searchInput.addEventListener("input", renderNotes);
 
 // Display notes when the page loads
 renderNotes();
+
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker
+      .register("./sw.js")
+      .then(() => {
+        console.log("Ankit Publication app is ready.");
+      })
+      .catch((error) => {
+        console.error("Service worker registration failed:", error);
+      });
+  });
+}
